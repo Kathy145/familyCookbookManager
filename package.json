@@ -1,0 +1,25 @@
+{
+  "name": "familyCookbookManager",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kathy145/familyCookbookManager.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kathy145/familyCookbookManager/issues"
+  },
+  "homepage": "https://github.com/Kathy145/familyCookbookManager#readme",
+  "dependencies": {
+    "express": "^4.16.2",
+    "express-handlebars": "^3.0.0",
+    "mongoose": "^4.13.9"
+  }
+}
