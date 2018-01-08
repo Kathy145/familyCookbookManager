@@ -1,4 +1,4 @@
-## Project 2: Family Cookbook Manager
+## Project 2: Family Cookbook Manager Scaffolding
 
 1. create app folder/dir
 2. Setup Environment
@@ -13,3 +13,31 @@
 
 ### MVP
 
+
+
+## Requirements
+
+1. Be built using Express, Handlebars, and Mongoose.
+a. You may request to use an alternative to Handlebars. Contact your squad leader for more information.
+
+2. Have at least 1 non-User model
+3. Have complete CRUD functionality implemented with RESTful routes, RESTful routes means using PUT, GET and not just post)
+    a. You may logically distribute CRUD functionality across models. This is only permissable when it does not make sense in the context of your application to have full CRUD on one model.
+4. Deploy your application on Heroku.
+5. Screencast === 3 mins
+
+## Remember ...
+- Have its own repository under your GitHub account (do not fork this repo).
+- Validate: Semantically-clean HTML and CSS.
+    -HTML will have [handlebars?] ___ written in so wont pass an actual validator
+- When President file structure === MVP structure!
+- Use example from scrum channel – shown in ‘when president’ solution
+Include README.md
+
+## Bonus
+- Use Materialize!!
+
+## ERD
+![alt text][logo]
+
+[logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 2"
