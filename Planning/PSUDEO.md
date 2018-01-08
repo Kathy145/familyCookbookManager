@@ -1,8 +1,15 @@
 ## Project 2: Family Cookbook Manager
 
-create app folder/dir
-npm init -y
-npm i express
-npm i mongoose
-npm i express-handlebars
-touch index.js
+1. create app folder/dir
+2. Setup Environment
+- npm init -y
+- npm i express
+- npm i mongoose
+- npm i express-handlebars
+3. Create touch index.js**
+
+
+
+
+### MVP
+
