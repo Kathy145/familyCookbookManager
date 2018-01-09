@@ -1,4 +1,4 @@
-const mongoose = require('cookbook)
+const mongoose = require('cookbook')
 
 const RecipeSchema = new mongoose.Schema({
   title: String,
