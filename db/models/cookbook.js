@@ -4,9 +4,9 @@ const Cookbook = mongoose.model('Cookbook', CookbookSchema);
 
 
 var CookbookSchema = new mongoose.Schema({
-    name: String,
+    cbkname: String,
     recipes: Array,
-    origindate: Date
+    origindate: String
 });
 
 

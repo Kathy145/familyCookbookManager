@@ -5,7 +5,7 @@ const RecipeSchema = new mongoose.Schema({
   description: String,
   ingredients: String,
   instructions: String,
-  origindate: Date
+  origindate: String
 })
 
 const Recipe = mongoose.model('Recipe', RecipeSchema)
