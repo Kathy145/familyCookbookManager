@@ -91,7 +91,7 @@ The world can be a depressing place. Your task is to create an app that will all
 
 You will create an application where users can bookmark links they want to keep. But what if users could trade bookmarks for other bookmarks? Or sell bookmarks for points? Or send bookmarks to your friends. Or something even crazier.
 
-### Photo Sha.re
+### Photo Share
 
 Users will be able to register and create albums and photos. Albums and photos can be named and described by their owners. Users will be able to view other users' albums. Maybe users can comment on photos, or either up/down vote them. (Please note: file uploading can be tricky and memory-intensive.)
 
