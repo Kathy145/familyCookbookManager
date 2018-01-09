@@ -17,7 +17,8 @@
 4. CLI: touch index.js
 5. Create models and link them to the database. 
 6. Create a couple pieces of seed data so that can see data retrieved from your database (by a mongoose model) show up on the page later.
-  - CLI: node db/seed.js
+  - CLI: (While running mongod)
+    - node db/seed.js === list of databases
 7. Build controllers and routing, to 'funnel' or direct the data into your handlebars views.
 8. Build your views and add CSS styling.
 9. Add new features!

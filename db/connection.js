@@ -1,6 +1,4 @@
-const mongoose = require('./models/recipe')
-
-mongoose.Promise = Promise;
+const mongoose = require('./models/recipe');
 
 const mongoUri = 'mongodb://localhost/recipemanager';
 
@@ -14,5 +12,7 @@ mongoose
     .catch(connectionError =>
         console.log('Connection failed!', connectionError)
     );
+
+mongoose.Promise = Promise;
 
 module.exports = mongoose;
