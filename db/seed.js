@@ -1,11 +1,14 @@
-var mongoose = require('../models/candidate');
-var seedData = require('./seedData');
+const mongoose = require('./connection');
+const seedData = require('./seedData.json');
 
-var Cookbook = mongoose.model('Cookbook');
+const Recipe = mongoose.model('Cookbook', RecipeSchema);
 
-Cookbook.remove({}).then(function() {
-    Cookbook.collection.insert(seedData).then(function() {
-        process.exit();
+mongoose.Promise = Promise;
+
+Recipe.remove({}).then(_ => {
+    console.log('Dropped the Cookbook database');
+    Recipe.collection.insert(seedData).then(seededEntries => {
+        console.log(seededEntries);
+        mongoose.connection.close();
     });
 });
-
