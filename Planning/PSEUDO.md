@@ -20,8 +20,8 @@
 7. Build controllers and routing, to 'funnel' or direct the data into your handlebars views.
 8. Build your views and add CSS styling.
 9. Add new features!
-### MVP
-## Requirements
+
+### MVP Requirements
 
 1. Utilize npm packages using Express, Handlebars, and Mongoose.
 3. Utilize at least 1 non-User model.

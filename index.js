@@ -1,13 +1,13 @@
 const express = require('express');
 const app = express();
-const hbs = require('express-handlebars');
+const hbs = require('express-handlebars')
 
-app.set('port', process.env.PORT || 3420);
+app.set('port', process.env.PORT || 3420)
 
-// const routes = require('./config/routes');
+// const routes = require('./config/routes')
 // app.use(routes);
 
-app.set('view engine', 'hbs');
+app.set('view engine', 'hbs')
 app.engine(
     '.hbs',
     hbs({
