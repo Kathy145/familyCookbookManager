@@ -15,20 +15,26 @@ mongodb: if (process.env.NODE_ENV == 'production') {
             )
         )
         .catch(connectionError =>
-            console.log('Connection to prod database failed!', connectionError)
+            console.log(
+                'Connection to production database failed!',
+                connectionError
+            )
         );
 } else {
     mongoose
         .connect(mongoUri)
         .then(connection =>
             console.log(
-                `Connection established to dev database '${
+                `Connection established to recipe database '${
                     connection.db.databaseName
                 }'`
             )
         )
         .catch(connectionError =>
-            console.log('Connection dev database failed!', connectionError)
+            console.log(
+                'Connection recipe database failed!',
+                connectionError
+            )
         );
 }
 
