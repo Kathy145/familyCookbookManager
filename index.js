@@ -1,6 +1,7 @@
-const express = require('express');
-const app = express();
-const hbs = require('express-handlebars')
+const express       = require('express');
+const hbs           = require('express-handlebars')
+const RecipeController = require("./controllers/recipes")
+const app           = express();
 
 app.set('port', process.env.PORT || 3420)
 
@@ -18,12 +19,13 @@ app.engine(
     })
 );
 
-// app.use('/assets', express.static('public'))
-// app.use('/recipes', recipes)
+app.use('/assets', express.static('public'))
 
-app.get('/', (req, res) => {
-    res.render('app-welcome');
-});
+app.use('/', RecipeController)
+
+// app.get('/', (req, res) => {
+//     res.render('app-welcome');
+// });
 
 // app.get('/', (req, res) => {
 // res.send('hello world')
