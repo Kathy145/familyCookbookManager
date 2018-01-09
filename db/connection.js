@@ -14,3 +14,5 @@ mongoose
     .catch(connectionError =>
         console.log('Connection failed!', connectionError)
     );
+
+module.exports = mongoose;
