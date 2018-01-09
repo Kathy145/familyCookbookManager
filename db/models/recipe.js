@@ -1,4 +1,4 @@
-const mongoose = require('./connection')
+const mongoose = require('cookbook)
 
 const RecipeSchema = new mongoose.Schema({
   title: String,
@@ -10,4 +10,4 @@ const RecipeSchema = new mongoose.Schema({
 
 const Recipe = mongoose.model('Recipe', RecipeSchema)
 
-module.exports = Recipe
+module.exports = mongoose
