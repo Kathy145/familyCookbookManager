@@ -7,10 +7,12 @@
 <form action="/recipes/{{ recipe.title }}?_method=put" method="post">
     <input type="text" title="recipe[title]" value="{{ recipe.title }}">
     <input type="text" title="recipe[description]" value="{{ recipe.description }}">
+    <input type="text" title="recipe[ingredients]" value="{{ recipe.ingredients }}">
+    <input type="text" title="recipe[instructions]" value="{{ recipe.instructions }}">
     <input type="submit" value="update">
 </form>
 
-<h2class = "center">Remove a Recipe</h2>
+<h2 class = "center">Remove a Recipe</h2>
 <form method="post" action="/recipes/{{ recipe.title }}?_method=delete" type="submit">
     <button>Remove</button>
 </form>
