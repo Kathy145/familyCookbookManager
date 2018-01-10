@@ -30,6 +30,10 @@
 3. Utilize at least 1 non-User model.X
 4. Utilize the complete CRUD functionality implemented with RESTful routes, RESTful routes means using PUT, GET and not just post)
    a. You may logically distribute CRUD functionality across models. This is only permissable when it does not make sense in the context of your application to have full CRUD on one model.
+   * C - Create (Post)
+   * R - Read X
+   * U - Update (PUT: Whole /Patch: Part of)
+   * D - Delete (GET)X
 5. Deploy your application on Heroku.X
 6. Screencast === 3 mins
 
