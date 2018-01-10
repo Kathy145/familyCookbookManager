@@ -26,17 +26,17 @@
 
 ### MVP Requirements
 
-1. Utilize npm packages using Express, Handlebars, and Mongoose.
-3. Utilize at least 1 non-User model.
+1. Utilize npm packages using Express, Handlebars, and Mongoose.X
+3. Utilize at least 1 non-User model.X
 4. Utilize the complete CRUD functionality implemented with RESTful routes, RESTful routes means using PUT, GET and not just post)
    a. You may logically distribute CRUD functionality across models. This is only permissable when it does not make sense in the context of your application to have full CRUD on one model.
-5. Deploy your application on Heroku.
+5. Deploy your application on Heroku.X
 6. Screencast === 3 mins
 
 Your repo should contain...
 
   * A **working full-stack application, built by you**, that meets the technical requirements above.
-  * **Frequent commits dating back to the very beginning** of the project.
+  * **Frequent commits dating back to the very beginning** of the project.X
   * **A ``readme.md`` file** in the root of your repo, with explanations of the technologies used, the approach taken, features, installation instructions, unsolved problems, etc.
   * **A `planning` directory** in the root of your repo containing a diagram mapping out your project domain. You are welcome to include other planning documents (e.g., wireframes, user stories).
   * A **link to your hosted, working application** in the URL section of your Github repo.

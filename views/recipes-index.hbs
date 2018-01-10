@@ -1,0 +1,15 @@
+<h2 class="center">Recipes</h2>
+{{#each recipes as |recipe index|}}
+<h2>
+    <a href="/recipes/{{recipe.title}}">
+        {{recipe.title}}
+    </a>
+</h2>
+{{/each}}
+
+<h3>Add a Recipe</h3>
+<form action="/recipes" method="post">
+    <input type="text" name="recipe[title]" placeholder="Title">
+    <input type="text" name="recipe[description]" placeholder="Description">
+    <input type="submit" value="Submit">
+</form>

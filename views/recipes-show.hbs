@@ -1,0 +1,13 @@
+{{#unless recipe}}
+<h2>That recipe could not be found!</h2>
+{{else}}
+<h2>{{recipe.title}}</h2>
+<form action="/recipes/{{recipe.title}}?_method=put" method="post">
+    <input type="text" title="recipe[title]" placeholder="title" value="{{recipe.title}}" />
+    <input type="string" title="recipe[description]" placeholder="Description" value="{{recipe.description}}" />
+    <button type="submit">Edit</button>
+</form>
+<form action="/recipes/{{recipe.title}}?_method=delete" method="post">
+    <button type="submit">Remove</button>
+</form>
+{{/unless}}

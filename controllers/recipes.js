@@ -3,41 +3,47 @@ const Recipe = mongoose.model('Recipe');
 const express = require('express');
 const router = express.Router();
 
+// router.get('/', (req, res) => {
+//     res.render('recipes-index', {});
+// });
+
 router.get('/', (req, res) => {
-    res.render('app-welcome');
+    Recipe.find({}).then(recipes => {
+        res.render('recipes-index', { recipes: recipes });
+    });
 });
 
-router.get('/recipes', (req, res) => {
-    res.render('recipes')
-});
+// router.get('/recipes', (req, res) => {
+//     res.render('recipes')
+// });
 
 router.get('/cookbook', (req, res) => {
     res.render('cookbook');
 });
 
-router.get('/recipes/:name', (req, res) => {
-    Recipe.findOne({ name: req.params.name }).then(recipe => {
+router.get('/:title', (req, res) => {
+    Recipe.findOne({ title: req.params.title }).then(recipe => {
         res.render('recipes-show', { recipe });
     });
 });
 
-router.post('/recipes', (req, res) => {
+router.post('/', (req, res) => {
     Recipe.create(req.body.recipe).then(recipe => {
-        res.redirect(`/recipes/${recipe.name}`);
+        res.redirect(`/recipes/${recipe.title}`);
     });
 });
 
-router.delete('/recipes/:name', (req, res) => {
-    Recipe.findOneAndRemove({ name: req.params.name }).then(() => {
+router.delete('/:title', (req, res) => {
+    Recipe.findOneAndRemove({ title: req.params.title }).then(() => {
         res.redirect('/recipes');
     });
 });
 
-router.put('/recipes/:name', (req, res) => {
-    Recipe.findOneAndUpdate({ name: req.params.name }, req.body.recipe, {
+router.put('/:title', (req, res) => {
+    Recipe.findOneAndUpdate({ title: req.params.title }, req.body.recipe, {
         new: true
     }).then(recipe => {
-        res.redirect(`/recipes/${recipe.name}`);
+        res.redirect(`/recipes/${recipe.title}`);
     });
 });
 
