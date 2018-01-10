@@ -5,11 +5,11 @@
 </h3>
 {{/each}}
 
-<h2 class = "center" >Add a family recipe to your cookbook!</h2>
+<h2 class="center">Add a family recipe to your cookbook!</h2>
 <form action="/recipes" method="post">
-    <input type="text" title="recipe[title]" placeholder="Title">
-    <input type="text" title="recipe[description]" placeholder="Description">
-    <input type="text" title="recipe[ingredients]" placeholder="Ingredients">
-    <input type="text" title="recipe[instructions]" placeholder="Instructions">
+    <input type="text" name="Recipe[title]" placeholder="Title">
+    <input type="text" name="recipe[description]" placeholder="Description">
+    <input type="text" name="recipe[ingredients]" placeholder="Ingredients">
+    <input type="text" name="recipe[instructions]" placeholder="Instructions">
     <input type="submit" value="Add Recipe">
 </form>
