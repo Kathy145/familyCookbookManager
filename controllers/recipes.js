@@ -27,7 +27,7 @@ router.get('/:title', (req, res) => {
     });
 });
 
-router.post('/recipes', (req, res) => {
+router.post('/', (req, res) => {
     Recipe.create(req.body.recipe).then(recipe => {
         res.redirect(`/recipes/${recipe.title}`);
     });
