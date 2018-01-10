@@ -1,11 +1,11 @@
-<h2>{{recipes.length}} recipes</h2>
+<h2class = "center">{{recipes.length}} recipes</h2>
 {{#each recipes as |recipe index|}}
-<h3>
+<h3class = "center">
     <a href="/recipes/{{recipe.title}}">{{recipe.title}}</a>
 </h3>
 {{/each}}
 
-<h2>Add a family recipe to your cookbook.</h2>
+<h2 class = "center" >Add a family recipe to your cookbook!</h2>
 <form action="/recipes" method="post">
     <input type="text" title="recipe[title]" placeholder="Title">
     <input type="text" title="recipe[description]" placeholder="Description">
