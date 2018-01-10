@@ -9,7 +9,7 @@ const router = express.Router();
 
 router.get('/', (req, res) => {
     Recipe.find({}).then(recipes => {
-        res.render('recipes-index', { recipes: recipes });
+        res.render('recipes-list', { recipes: recipes });
     });
 });
 
@@ -23,7 +23,7 @@ router.get('/cookbook', (req, res) => {
 
 router.get('/:title', (req, res) => {
     Recipe.findOne({ title: req.params.title }).then(recipe => {
-        res.render('recipes-show', { recipe });
+        res.render('recipe-detail', { recipe });
     });
 });
 
