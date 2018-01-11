@@ -13,3 +13,8 @@ img {
     margin: 0 auto;
 }
 
+.bs {
+    overflow: auto !important;
+    object-fit: contain !important;
+    height: 500px !important;
+}

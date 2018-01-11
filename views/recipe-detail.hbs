@@ -5,14 +5,14 @@
 {{/if}}
 <h4 class="center">Update information</h4>
 <form action="/recipes/{{ recipe.title }}?_method=put" method="post">
-    <input type="text" name="recipe[title]" value="{{ recipe.title }}">
-    <input type="text" name="recipe[description]" value="{{ recipe.description }}">
-    <input type="text" name="recipe[ingredients]" value="{{ recipe.ingredients }}">
-    <input type="text" name="recipe[instructions]" value="{{ recipe.instructions }}">
-    <input class="btn waves-effect waves-light pink accent-2" type="submit" value="Update Recipe">
+    <input class="center" type="text" name="recipe[title]" value="{{ recipe.title }}">
+    <input class="center bs" type="text" name="recipe[description]" value="{{ recipe.description }}">
+    <input type="text" class="center" name="recipe[ingredients]" value="{{ recipe.ingredients }}">
+    <input class="center" type="text" name="recipe[instructions]" value="{{ recipe.instructions }}">
+    <input class="center btn waves-effect waves-light pink accent-2" type="submit" value="Update Recipe">
 </form>
 
-{{!-- <br></br> --}}
+<br></br>
 
 <h4 class="center">Delete a Recipe</h4>
 <form method="post" action="/recipes/{{ recipe.title }}?_method=delete" type="submit" class="center">
