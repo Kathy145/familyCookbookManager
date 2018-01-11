@@ -9,12 +9,12 @@
     <input type="text" name="recipe[description]" value="{{ recipe.description }}">
     <input type="text" name="recipe[ingredients]" value="{{ recipe.ingredients }}">
     <input type="text" name="recipe[instructions]" value="{{ recipe.instructions }}">
-    <input class="btn pink accent-2" type="submit" value="Update Recipe">
+    <input class="btn waves-effect waves-light pink accent-2" type="submit" value="Update Recipe">
 </form>
 
 {{!-- <br></br> --}}
 
 <h4 class="center">Delete a Recipe</h4>
 <form method="post" action="/recipes/{{ recipe.title }}?_method=delete" type="submit" class="center">
-<input class="btn pink accent-2" type="submit" value="Delete Recipe">
+<input class="btn waves-effect waves-light pink accent-2" type="submit" value="Delete Recipe">
 {{!-- </form> --}}
