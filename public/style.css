@@ -18,3 +18,7 @@ img {
     object-fit: contain !important;
     height: 500px !important;
 }
+h2 {
+
+    font-style: italic; 
+}

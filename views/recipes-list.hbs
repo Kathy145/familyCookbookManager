@@ -1,8 +1,8 @@
-<h2 class="center">{{recipes.length}} recipes</h2>
+<h2 class="center">{{recipes.length}} Recipes</h2>
 {{#each recipes as |recipe index|}}
-<h3 class="center">
+<h5 class="center">
     <a href="/recipes/{{recipe.title}}">{{recipe.title}}</a>
-</h3>
+</h5>
 {{/each}}
 
 <h4 class="center">Add a family recipe to your cookbook!</h4>
@@ -12,6 +12,6 @@
     <input class="center" type="text" name="recipe[description]" placeholder="Description">
     <input class="center" type="text" name="recipe[ingredients]" placeholder="Ingredients">
     <input class="center" type="text" name="recipe[instructions]" placeholder="Instructions">
-    <input class="center" class="btn waves-effect waves-light pink accent-2 "type="submit" value="Add Recipe">
+    <input class=" center btn waves-effect waves-light pink accent-2 "type="submit" value="Add Recipe">
 </form>
 <br></br>
