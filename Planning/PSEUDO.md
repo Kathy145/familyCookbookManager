@@ -73,6 +73,29 @@ Your project is due on **Thursday, Jan 11th at 2:00pm**. Create an issue on [the
     > *Please do **not** fork this repo*
   * a link to your [screencast presentation](https://git.generalassemb.ly/ga-wdi-exercises/project2/blob/master/presentations.md)
 
+    ### Screencast
+      #### Script:
+
+        Welcome and thank you for visiting by Lotus Designs!
+        
+        Today's feature app is Juliaette's Family Cookbook Manager.  Named after my maternal family matriarch, Juliaette.  This app will help connect families and help to easily record family their 'secret' family recipes to maintain for generations to come. 
+
+        You are greeted by a picture of my grandmommy.  Future iterations will include user profile creation which will allow each user to be greeted with the picture of their selection.
+
+        Once you are ready to view the list of recipes.  Select 'Resipes' located in the upper right hand corner. Once you select recipes..... 
+
+        UPDATE>>>>>
+
+        DELETE>>>>>
+
+
+        Do anything differently?>>>>>>>>>
+
+        Features to look forward to>>>>>> 
+      
+
+
+
 ## Bonus
 
 * Use Materialize!! (MVP?)
