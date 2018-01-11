@@ -17,10 +17,6 @@ router.get('/', (req, res) => {
 //     res.render('recipes')
 // });
 
-router.get('/cookbook', (req, res) => {
-    res.render('cookbook');
-});
-
 router.get('/:title', (req, res) => {
     Recipe.findOne({ title: req.params.title }).then(recipe => {
         res.render('recipe-detail', { recipe });

@@ -1,4 +1,4 @@
-var elem = document.querySelector('.materialboxed');
+// var elem = document.querySelector('.materialboxed');
 // var instance = M.Materialbox.init(elem, options);
 
-var instance = M.Materialbox.instance.open();
+// var instance = M.Materialbox.instance.open();

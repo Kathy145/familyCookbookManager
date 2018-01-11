@@ -24,6 +24,16 @@
 8. Build your views and add CSS styling.
 9. Add new features!
 
+## Database Issues?
+1. mongo
+2. show dbs
+3. use recipeManager
+4. db.dropDatabase()
+5. use recipeManager
+////
+6. show collections
+7. db.recipes.find().pretty()
+
 ### MVP Requirements
 
 1. Utilize npm packages using Express, Handlebars, and Mongoose.X

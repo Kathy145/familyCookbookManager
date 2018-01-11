@@ -1,18 +1,20 @@
 {{#if recipe}}
 <h2 class="center">{{recipe.title}}</h2>
 {{else}}
-<h2 class="center"> Unfortunately, that recipe could not be found.</h2>
+<h3 class="center"> Unfortunately, that recipe could not be found.</h3>
 {{/if}}
-<h2 class="center">Update information</h2>
+<h4 class="center">Update information</h4>
 <form action="/recipes/{{ recipe.title }}?_method=put" method="post">
     <input type="text" name="recipe[title]" value="{{ recipe.title }}">
     <input type="text" name="recipe[description]" value="{{ recipe.description }}">
     <input type="text" name="recipe[ingredients]" value="{{ recipe.ingredients }}">
     <input type="text" name="recipe[instructions]" value="{{ recipe.instructions }}">
-    <input type="submit" value="Update Recipe">
+    <input class="btn pink accent-2" type="submit" value="Update Recipe">
 </form>
 
-<h2 class="center">Delete a Recipe</h2>
-<form method="post" action="/recipes/{{ recipe.title }}?_method=delete" type="submit">
-    <button>Delete Recipe</button>
-</form>
+{{!-- <br></br> --}}
+
+<h4 class="center">Delete a Recipe</h4>
+<form method="post" action="/recipes/{{ recipe.title }}?_method=delete" type="submit" class="center">
+<input class="btn pink accent-2" type="submit" value="Delete Recipe">
+{{!-- </form> --}}
