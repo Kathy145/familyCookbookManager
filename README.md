@@ -15,9 +15,7 @@ To begin your Juliaette Family Cookbook Manager experience, please visit: https:
 - To update an existing recipe, select the recipe and update the necessary items. 
 ![Recipes View](https://github.com/Kathy145/familyCookbookManager/blob/master/public/img/Recipe%20View%20-%20Juliaette%20Family%20Cookbook%20Manager.png?raw=true "Recipes View")
 
-For a sneek peek check out... 
-![Welcome Page](https://github.com/Kathy145/familyCookbookManager/blob/master/public/img/Home%20-%20Juilaette%20Family%20Cookbook%20Manager.png?raw=true "Welcome")
-
+For a sneek peek check out... [Screencast](https://youtu.be/m0Izeq9MXFE). 
 
 #### Contributions 
 
