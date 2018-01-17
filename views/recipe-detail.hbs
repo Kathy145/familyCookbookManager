@@ -1,8 +1,9 @@
 {{#if recipe}}
-<h2 class=" bs center">{{recipe.title}}</h2>
+    <h2 class="bs center">{{recipe.title}}</h2>
 {{else}}
-<h3 class="center"> Unfortunately, that recipe could not be found.</h3>
+    <h3 class="center"> Unfortunately, that recipe could not be found.</h3>
 {{/if}}
+
 <h4 class="center">Update information</h4>
 <form action="/recipes/{{ recipe.title }}?_method=put" method="post">
     <input class="center" type="text" name="recipe[title]" value="{{ recipe.title }}">
@@ -16,5 +17,5 @@
 
 <h4 class="center">Delete a Recipe</h4>
 <form method="post" action="/recipes/{{ recipe.title }}?_method=delete" type="submit" class="center">
-<input class="btn waves-effect waves-light pink accent-2" type="submit" value="Delete Recipe">
-{{!-- </form> --}}
+    <input class="btn waves-effect waves-light pink accent-2" type="submit" value="Delete Recipe">
+</form>

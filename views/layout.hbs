@@ -12,13 +12,12 @@
 
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.3/js/materialize.min.js" defer></script>
-
-
 </head>
 
 <body>
     <nav class="pink accent-2">
         <div class="nav-wrapper">
+            {{!-- I would work on making this header resize on smaller screens! --}}
             <a href="/" class="brand-logo ">Juliaette Family Cookbook Manager</a>
             <ul class="right hide-on-med-and-down">
                 {{!--
@@ -34,11 +33,13 @@
             </ul>
         </div>
     </nav>
+    {{!-- This will give you the sticky footer! --}}
+    <main>
+        <div class="container center al">
+        {{{body}}}
 
-    <div class="container center al">
-    {{{body}}}
-
-    </div>
+        </div>
+    </main>
     <br></br>
     <footer class="page-footer black center">
         {{!--
