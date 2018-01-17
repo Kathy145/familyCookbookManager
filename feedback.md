@@ -13,7 +13,7 @@
 **Progressing** - Application contains no major errors
 
 ## Planning / Process / Submission
-**Planning / Process / Submission** - Submission contains clear evidence of planning, adequate documentation, include all from previous category, as well as additional information such as unsolved issues.
+**Progressing** - Submission contains clear evidence of planning, adequate documentation, include all from previous category, as well as additional information such as unsolved issues.
 
 ## Additional Feedback
 Awesome job! The project looks great and is fully functional!
