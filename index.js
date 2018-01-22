@@ -1,7 +1,5 @@
-const express = require('express');
-const hbs = require('express-handlebars');
+
 const RecipeController = require('./controllers/recipes');
-const app = express();
 const bodyParser = require('body-parser');
 const methodOverride = require('method-override');
 
