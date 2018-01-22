@@ -8,10 +8,10 @@ const router = express.Router();
 // });
 
 router.get('/', (req, res) => {
-    Recipe.find({}).then(recipes => {
-        res.render('recipes-list', { recipes: recipes });
-    });
-});
+    Recipe.find({}).then(recipes =>
+        res.json({ recipes: recipes })
+    )
+})
 
 // router.get('/recipes', (req, res) => {
 //     res.render('recipes')

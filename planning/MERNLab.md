@@ -3,9 +3,14 @@
 ## Process
     1. Delete Public
     2. Delete Views
-    3. Delete Dependendcies
+    3. Delete Dependencies
         a. handlebars
         b. express
+    4. Convert to JSON data
+    5. Convert all render statements to json or send.
+    6. Run nodemon & confirm JSON data present
+    7. Install Cors
+    8. create-react-app mern lab
 
 ## Prompt
 
