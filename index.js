@@ -4,6 +4,7 @@ const RecipeController = require('./controllers/recipes')
 const app = express()
 const bodyParser = require('body-parser')
 const methodOverride = require('method-override')
+const cors = require('cors')
 
 app.set('port', process.env.PORT || 3420)
 
@@ -27,6 +28,7 @@ app.use(methodOverride('_method'))
 // app.get('/', (req, res) => {
 //     res.send('app-welcome')
 // })
+app.use(cors())
 app.use('/', RecipeController)
 
 // app.get('/', (req, res) => {
@@ -40,3 +42,5 @@ app.use('/', RecipeController)
 app.listen(app.get('port'), () => {
     console.log(`✅  It's aliiive on PORT: ${app.get('port')} Aww...yeah!🌟`)
 })
+
+mongodb://mernlab:mernlab@ds247357.mlab.com:47357/recipemanager
