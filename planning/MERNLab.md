@@ -10,7 +10,8 @@
     5. Convert all render statements to json or send.
     6. Run nodemon & confirm JSON data present
     7. Install Cors
-    8. create-react-app mern lab
+    8. Creat new repo  via 'create-react-app mern lab'
+    9. 
 
 ## Prompt
 
@@ -28,7 +29,7 @@ $ git checkout -b <your-branch-here>
 
 ### React app requirements
 
-* [ ] A React app is present
+* [X] A React app is present
 * [ ] React app has at least two components.
 * [ ] React repo is organized and files are semantically named
 * [ ] React app makes API calls to the back-end application in `componentDidMount()`
