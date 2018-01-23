@@ -19,7 +19,7 @@ router.get('/', (req, res) => {
 
 router.get('/:title', (req, res) => {
     Recipe.findOne({ title: req.params.title }).then(recipe => {
-        res.render('recipe-detail', { recipe });
+        res.json('recipe-detail', { recipe });
     });
 });
 
