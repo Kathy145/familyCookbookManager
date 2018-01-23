@@ -42,5 +42,3 @@ app.use('/', RecipeController)
 app.listen(app.get('port'), () => {
     console.log(`✅  It's aliiive on PORT: ${app.get('port')} Aww...yeah!🌟`)
 })
-
-mongodb://mernlab:mernlab@ds247357.mlab.com:47357/recipemanager
