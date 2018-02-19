@@ -1,0 +1,24 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    /* justify-content: space-between; */
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+img {
+    margin: 0 auto;
+}
+
+.bs {
+    overflow: auto !important;
+    object-fit: contain !important;
+    height: 500px !important;
+}
+h2 {
+
+    font-style: italic; 
+}
