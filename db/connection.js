@@ -10,7 +10,7 @@ if (process.env.NODE_ENV == 'production') {
         .then(connection =>
             console.log(
                 `Connection established to production database '${
-                    connection.db.databaseName
+                connection.db.databaseName
                 }'`
             )
         )
@@ -26,7 +26,7 @@ if (process.env.NODE_ENV == 'production') {
         .then(connection =>
             console.log(
                 `Connection established to recipe database '${
-                    connection.db.databaseName
+                connection.db.databaseName
                 }'`
             )
         )
