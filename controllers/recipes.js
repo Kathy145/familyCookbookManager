@@ -3,15 +3,10 @@ const Recipe = mongoose.model('Recipe');
 const express = require('express');
 const router = express.Router();
 
-// router.get('/', (req, res) => {
-//     res.render('recipes-index', {});
-// });
-
 router.get('/', (req, res) => {
-    Recipe.find({}).then(recipes =>
-        res.json({ recipes: recipes })
-    )
-})
+    res.render('recipes-index', {});
+});
+
 
 // router.get('/recipes', (req, res) => {
 //     res.render('recipes')
