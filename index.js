@@ -31,13 +31,13 @@ app.get('/', (req, res) => {
 app.use(cors())
 app.use('/', RecipeController)
 
-app.get('/', (req, res) => {
-    res.render('app-welcome');
-});
+// app.get('/', (req, res) => {
+//     res.render('app-welcome');
+// });
 
-app.get('/', (req, res) => {
-res.send('hello world')
-})
+// app.get('/', (req, res) => {
+// res.send('hello world')
+// })
 
 app.listen(app.get('port'), () => {
     console.log(`✅  It's aliiive on PORT: ${app.get('port')} Aww...yeah!🌟`)
