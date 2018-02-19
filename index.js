@@ -25,9 +25,9 @@ app.engine(
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(methodOverride('_method'))
 app.use('/assets', express.static('public'))
-app.get('/', (req, res) => {
-    res.send('app-welcome')
-})
+// app.get('/', (req, res) => {
+//     res.send('app-welcome')
+// })
 app.use(cors())
 app.use('/', RecipeController)
 
