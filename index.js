@@ -24,7 +24,7 @@ app.set('port', process.env.PORT || 3420)
 
 app.use(cors())
 app.use(bodyParser.urlencoded({ extended: true }))
-app.use(parser.json({ extended: false }))
+app.use(bodyParser.json({ extended: false }))
 app.use(methodOverride('_method'))
 // app.use('/assets', express.static('public'))
 // app.get('/', (req, res) => {
