@@ -42,12 +42,12 @@ router.delete('/:title', (req, res) => {
 })
 
 router.put('/:title', (req, res) => {
-    Recipe.findOneAndUpdate({ title: req.params.title }, req.body.recipe, {
-      new: true})
+    Recipe.findOneAndUpdate({ title: req.params.title }, req.body.recipe, {new: true})
       .then(recipe => {
       // res.redirect(`/recipes/${recipe.title}`)
       res.json({ recipe: recipe })
     })
+    .catch(err => console.log('Oops!', err))
 })
 
-module.exports = router;
+module.exports = router
