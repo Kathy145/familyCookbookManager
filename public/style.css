@@ -2,6 +2,7 @@ body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
+    /* Remove commented code in production! */
     /* justify-content: space-between; */
 }
 
@@ -18,7 +19,7 @@ img {
     object-fit: contain !important;
     height: 500px !important;
 }
-h2 {
 
+h2 {
     font-style: italic; 
 }
